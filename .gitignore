@@ -1,12 +1,27 @@
-*.class
+# Created by .ignore support plugin (hsz.mobi)
+# Runtime files.
+db/
+*.log
+SERVERVERSION
+server.pid
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Testing files.
+derby.log
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Maven files.
+target/
+dependency-reduced-pom.xml
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# IntelliJ files.
+out/
+.idea/
+*.iml
+
+# Floobits files.
+.floo
+.flooignore
+
+# Mac files.
+**/*/.DS_Store
+.DS_Store
+
