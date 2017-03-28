@@ -46,7 +46,7 @@ public class Main implements PanelSwitcher {
 					window.addPanel(new ListContentPanel(window,new CustomerDataModel()),CustomerDataModel.class.getName());
 					window.addPanel(new ListContentPanel(window,new ProductDataModel()),ProductDataModel.class.getName());
 					window.addPanel(new ListContentPanel(window,new SalesOrderDataModel()),SalesOrderDataModel.class.getName());
-					window.frame.setVisible(true);
+					window.frame.setVisible(false);
 					
 				} catch (Exception e) {
 					e.printStackTrace();

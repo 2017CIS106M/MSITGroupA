@@ -24,8 +24,6 @@ CREATE TABLE `customers` (
 );
 COMMIT;
 
-DROP TABLE `sales_orders`;
-COMMIT;
 CREATE TABLE `sales_orders` (
   `code` BIGINT unsigned NOT NULL,
   `customer` VARCHAR(20) NOT NULL,
