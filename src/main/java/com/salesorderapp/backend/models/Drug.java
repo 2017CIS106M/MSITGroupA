@@ -20,8 +20,6 @@ public class Drug implements Serializable {
   @Id
   private String drug_cd;
 
-  @NotNull
-  @Size(min = 2, max = 80)
   @Column(name = "name")
   private String name;
 

@@ -1,5 +1,5 @@
 # SalesOrder-SpringBoot-Swing-MySql-Hibernate
-	A Sales order application for managing inventory level, sales operation and customers credit account.
+	A Sales order application for managing inventory level, sales operation and drug credit account.
 
 ###Prerequisites
 	•	Java 8

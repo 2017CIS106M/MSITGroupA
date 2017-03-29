@@ -12,7 +12,7 @@ CREATE TABLE `products` (
 );
 COMMIT;
 
-CREATE TABLE `customers` (
+CREATE TABLE `drug` (
   `code` BIGINT unsigned NOT NULL,
   `name` VARCHAR(20) NOT NULL,
   `address` TEXT,

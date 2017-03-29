@@ -53,6 +53,10 @@ public abstract class BaseDao<T> {
     return (T)entityManager.find(classType, code);
   }
 
+  public T getById(final Class classType, final String code) {
+    return (T)entityManager.find(classType, code);
+  }
+
   /**
    * Update the passed Object in the database.
    */
@@ -67,6 +71,19 @@ public abstract class BaseDao<T> {
   public List<T> getBySalesCode(final String entity, final long salesCode) {
     return entityManager.createQuery(String.format("from %s where sales_code = %s", entity, salesCode))
         .getResultList();
+  }
+
+  public List<T> getBySymptomsCode(final String entity, final String symptomsCode) {
+    return entityManager.createQuery(String.format("from %s where symptoms_cd = '%s'", entity, symptomsCode))
+            .getResultList();
+  }
+  public List<T> getByDiseaseCode(final String entity, final String diseaseCode) {
+    return entityManager.createQuery(String.format("from %s where disease_cd = '%s'", entity, diseaseCode))
+            .getResultList();
+  }
+  public T getDrugByCode(final String entity, final String diseaseCode) {
+    return (T)entityManager.createQuery(String.format("from %s where drug_cd = '%s'", entity, diseaseCode))
+            .getSingleResult();
   }
 
   // An EntityManager will be automatically injected from entityManagerFactory

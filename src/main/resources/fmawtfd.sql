@@ -34,10 +34,10 @@ CREATE TABLE `brand` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `customers`
+-- Table structure for `drug`
 -- ----------------------------
-DROP TABLE IF EXISTS `customers`;
-CREATE TABLE `customers` (
+DROP TABLE IF EXISTS `drug`;
+CREATE TABLE `drug` (
   `code` bigint(20) NOT NULL,
   `address` varchar(255) DEFAULT NULL,
   `credit_limit` double DEFAULT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE `customers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of customers
+-- Records of drug
 -- ----------------------------
 
 -- ----------------------------
